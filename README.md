@@ -1,8 +1,8 @@
 BÀI TẬP VỀ NHÀ – MÔN: AN TOÀN VÀ BẢO MẬT THÔNG TIN 
-Chủ đề: Chữ ký số trong file PDF 
-Giảng viên: Đỗ Duy Cốp 
-Thời điểm giao: 2025-10-24 11:45 
-Đối tượng áp dụng: Toàn bộ sv lớp học phần 58KTPM Hạn nộp: Sv upload tất cả lên github trước 2025-10-31 23:59:59
+- Chủ đề: Chữ ký số trong file PDF 
+- Giảng viên: Đỗ Duy Cốp 
+- Thời điểm giao: 2025-10-24 11:45 
+- Đối tượng áp dụng: Toàn bộ sv lớp học phần 58KTPM Hạn nộp: Sv upload tất cả lên github trước 2025-10-31 23:59:59
 I. MÔ TẢ CHUNG Sinh viên thực hiện báo cáo và thực hành: phân tích và hiện thực việc nhúng, xác thực chữ ký số trong file PDF. 
 Phải nêu rõ chuẩn tham chiếu (PDF 1.7 / PDF 2.0, PAdES/ETSI) và sử dụng công cụ thực thi (ví dụ iText7, OpenSSL, PyPDF, pdf-lib).
 II. CÁC YÊU CẦU CỤ THỂ 1) Cấu trúc PDF liên quan chữ ký (Nghiên cứu)- Mô tả ngắn gọn: Catalog, Pages tree, Page object, Resources, Content streams, XObject, AcroForm, Signature field (widget), Signature dictionary (/Sig), /ByteRange, /Contents, incremental updates, và DSS (theo PAdES).
