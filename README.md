@@ -152,4 +152,19 @@ ISO 32000-1 / PDF 1.7
 # Chuẩn tham chiếu	
 - RFC 3161 (IETF), ETSI EN 319 422 (PAdES)
 
+# Xác mình chữ ký PDF:
+Các bước xác mình:
+Đọc Signature dictionary: /Contents, /ByteRange
+Tách chuỗi PKCS#7 từ PDF
+Kiểm tra messageDigest so với hash thực tế
+Xác minh chữ ký bằng public key trong signer_cert.pem
+Kiểm tra chứng thư (chain, validity date)
+Kiểm tra có bị sửa đổi (so sánh ByteRange)
+# Kết quả:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6ad4fd7d-f972-4677-b089-e4c12b32c134" />
+
+
+
+
+
 
