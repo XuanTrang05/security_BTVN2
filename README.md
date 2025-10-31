@@ -72,8 +72,20 @@ Thành Phần Và	Vai Trò :
 - Incremental update	Cơ chế ghi thêm phần chữ ký mà không thay đổi dữ liệu gốc.
 - DSS (Document Security Store)	Nơi lưu chứng chỉ, OCSP, CRL, timestamp (PAdES-LTV).
  # Sơ đồ catalo
- <img width="704" height="835" alt="image" src="https://github.com/user-attachments/assets/52cdd1d0-a508-48c6-bb9c-485417aa8b04" />
-
+Catalog (/Root)
+├─ Pages (/Pages)
+│  └─ Page (/Page)
+│     ├─ /Contents (Content streams)
+│     └─ /Resources
+│         └─ XObject
+└─ /AcroForm
+   └─ SigField (widget)
+       └─ /V (Signature dictionary)
+           ├─ /ByteRange
+           └─ /Contents (PKCS#7 signature)
+           
+Incremental update → thêm SigField mới
+DSS → /DSS dictionary (chứng chỉ, OCSP, CRL)
 2. Thời gian ký được lưu ở đâu?
 o	Nêu tất cả vị trí có thể lưu thông tin thời gian: 
 o	/M trong Signature dictionary (dạng text, không có giá trị pháp lý).
