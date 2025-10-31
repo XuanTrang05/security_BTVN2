@@ -113,19 +113,31 @@ Document Timestamp Object
 - Lưu trữ timestamp, chứng chỉ, OCSP, CRL phục vụ xác minh lâu dài (LTV – Long Term Validation).
 - Có thể chứa Document Timestamp và TimeStamp Token dùng để chứng minh tài liệu và chữ ký vẫn hợp lệ sau nhiều năm.
 ## So sánh /M và timestamp RFC 3161
-# /M trong Signature dictionary -	RFC 3161 Timestamp (timeStampToken)
+# /M trong Signature dictionary 
 # Vị trí lưu
 - Trực tiếp trong /Sig dictionary của PDF
 # Cách tạo
 - Ứng dụng ký tự ghi thời gian hệ thống khi ký
 # Chứng thực bởi bên thứ ba?
 - Không, chỉ là thông tin nội bộ
-
-Bên trong PKCS#7/CMS (thuộc tính unsignedAttrs)
-Cách tạo	Gửi hash tài liệu đến TSA (Time Stamping Authority) để nhận lại token đã được TSA ký
-Chứng thực bởi bên thứ ba?	Có, được TSA ký bằng khóa riêng
-Giá trị pháp lý	Không có	Có giá trị chứng minh thời điểm ký
-Khả năng xác minh	Không thể kiểm tra tính chính xác	Có thể xác minh bằng chứng chỉ TSA và chữ ký TSA
-Chuẩn tham chiếu	ISO 32000-1 / PDF 1.7	RFC 3161 (IETF), ETSI EN 319 422 (PAdES)
+# Giá trị pháp lí
+- Không có
+# Khả năng xác minh
+- Không thể kiểm tra tính chính xác
+# Chuẩn tham chiếu
+ISO 32000-1 / PDF 1.7
+# RFC 3161 Timestamp (timeStampToken)
+# Vị trí lưu
+- Bên trong PKCS#7/CMS (thuộc tính unsignedAttrs)
+# Cách tạo
+- Gửi hash tài liệu đến TSA (Time Stamping Authority) để nhận lại token đã được TSA ký
+# Chứng thực bởi bên thứ ba?	
+- Có, được TSA ký bằng khóa riêng
+# Giá trị pháp lý		
+- Có giá trị chứng minh thời điểm ký
+# Khả năng xác minh
+- Có thể xác minh bằng chứng chỉ TSA và chữ ký TSA
+# Chuẩn tham chiếu	
+- RFC 3161 (IETF), ETSI EN 319 422 (PAdES)
 
 
